@@ -10,7 +10,7 @@ def main():
        print(">>> 启动拟合...")
        results = model.train(
            data="./NEU-DET/data.yaml",
-           epochs=100,                  # 训练轮数
+           epochs=50,                  # 训练轮数
            imgsz=800,                  # 图像缩放尺寸
            batch=16,                   # 每次吞吐的图片数量 (4060 8G 推荐值)
            device=0,                   # 调用第一张 GPU
@@ -22,7 +22,7 @@ def main():
            erasing=0.4,                 
 
            project="Defect_Results",   # 训练结果保存的主文件夹名
-           name="v5_train"             # 本次训练的子文件夹名
+           name="v6_train"             # 本次训练的子文件夹名
        )
 
        print(">>> 训练结束。")
