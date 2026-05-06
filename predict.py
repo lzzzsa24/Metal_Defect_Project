@@ -3,7 +3,7 @@ from ultralytics import YOLO
 def main():
     print(">>> 正在装载best.pt...")
     # 路径指向你刚刚训练出来的最优权重
-    model = YOLO("./runs/detect/Defect_Results/v1_train/weights/best.pt") 
+    model = YOLO("./runs/detect/Defect_Results/v8_train/weights/best.pt") 
     
     # 请去你的验证集里随便挑一张图片的完整名字，替换掉下面的 'xxx.jpg'
     # 例如：'crazing_1.jpg' 或者 'patches_5.jpg'
